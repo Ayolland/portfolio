@@ -1,6 +1,6 @@
 html,body {
   height:100%;
-  background-image: url(concrete_line_marked_1.jpg);
+  background-image: url(Concrete_Line_Marked_1.jpg);
   background-size: 30%;
   background-attachment: fixed;
   font-family: Arvo;
@@ -100,7 +100,6 @@ section#section2 {
 
 body {
     margin: 0;
-    font-family: "Diplomata SC";
 }
 
 .emboss {
