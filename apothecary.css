@@ -24,7 +24,7 @@ section#section1 {
 }
 
 .cabinet {
-  background-image: url(http://localhost:4567/dark_wood.jpg);
+  background-image: url('dark_wood.jpg');
   position: relative;
   z-index: 0;
   margin: 15% auto 0 auto;
@@ -202,7 +202,7 @@ hr.small {
   color: rgb(47, 45, 45);
   font-weight: bold;
   padding: 1vmin !important;
-  background-image: url(http://localhost:4567/Wool.jpg);
+  background-image: url('Wool.jpg');
   background-size: 50%;
   box-shadow: rgba(0, 0, 0, 0.298039) 1vw 1vw 1vw;
   border-style: double;
@@ -212,14 +212,14 @@ hr.small {
 }
 
 .right .plaque p::before {
-    content: "«";
+    content: "\00AB";
     float: left;
     font-size: 12vmin;
     margin: -3vmin 1.5vw 0 1vw;
 }
 
 .left .plaque p::before {
-    content: "»";
+    content: "\00BB";
     float: right;
     font-size: 12vmin;
     margin: -3vmin -0.5vw 0 1.5vw;
