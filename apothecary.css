@@ -1,0 +1,538 @@
+html,body {
+  height:100%;
+  background-image: url(concrete_line_marked_1.jpg);
+  background-size: 30%;
+  background-attachment: fixed;
+  font-family: Arvo;
+}
+
+p {
+  font-family: Arvo;
+  font-weight: 400;
+}
+
+header {
+  width: 90% !important;
+  left: 5%;
+  right: 5%;
+  box-shadow: 3vw 2vw 3vw rgba(0, 0, 0, 0.52) !important;
+  position: relative !important;
+}
+
+section#section1 {
+  height: 300px;
+}
+
+.cabinet {
+  background-image: url(http://localhost:4567/dark_wood.jpg);
+  position: relative;
+  z-index: 0;
+  margin: 15% auto 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.61) 7vw 6vw 3vw, rgba(0, 0, 0, 0.55) -4vw 6vw 5vw;
+  border-radius: 1vmin;
+  border-top: 1.5vmin solid rgba(228, 206, 129, 0.25);
+  border-left: 1.5vw solid rgba(235, 157, 134, 0.15);
+  border-right: 1.5vw solid rgba(0, 0, 0, 0.48);
+}
+
+div.cubby {
+  overflow: hidden;
+  position: relative;
+  background-image: url('red_wood_box.jpg');
+  background-size: 100% auto;
+  margin: 0 auto !important;
+  max-width: 300px;
+  border: 1vmin solid;
+  border-top-color: rgba(24, 24, 24, 1);
+  border-left-color: rgb(43, 43, 43);
+  border-right-color: rgb(90, 76, 58);
+  border-bottom-color: rgb(117, 103, 85);
+  box-shadow: rgba(21, 18, 17, 0.66) -1vw -1vw 5vw inset, rgba(24, 12, 12, 0.73) 3vw 6vw 12vw inset;
+}
+
+nav ul {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 3vw 0 0 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    width: 20%;
+    font-size: 1.6vmin;
+    padding: 1vmin;
+    background: rgba(82, 70, 49, 0.57);
+    color: black;
+}
+
+nav li a{
+  font-family: Arvo;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+nav li a::before {
+    content: "= ";
+}
+
+nav li a::after {
+    content: " =";
+}
+
+nav li a:hover{
+  color: white !important;
+}
+
+.col-box.cubby img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  -webkit-filter: blur(2px) brightness(0);
+  -webkit-transition: -webkit-filter 500ms linear;
+}
+
+section#section2 {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Diplomata SC";
+}
+
+.emboss {
+    overflow: hidden;
+    border-top: 1vmin solid rgba(228, 206, 129, 0.25);   
+    border-left: 1vmin solid rgba(235, 157, 134, 0.15);   
+    border-right: 1vmin solid rgba(0, 0, 0, 0.48);
+    border-bottom: 1vmin solid black;
+}
+
+.screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(glass.png);
+    background-size:100%;
+    transition: margin-top 1s;
+    z-index: 4;
+}
+
+.cubby:hover .screen, .cubby.hover_effect .screen {
+    margin-top: -90%;
+}
+
+.cubby:hover img, .cubby.hover_effect img{
+    -webkit-filter: initial;
+}
+
+.cubby-holder {
+    margin-left: auto;
+}
+
+img#bottles {
+  width: 100%;
+  position: relative;
+  margin-top: -36%;
+}
+
+h1.font-effect-destruction {
+  font-family: Ewert;
+  text-align: center;
+  text-shadow: 0.2vw 0.3vw white;
+  font-size: 12vw;
+  line-height: 0.8;
+  margin: 0;
+}
+
+h4 {
+    font-family: Arvo !important;
+    font-size: 2vw !important;
+    margin: 2vw;
+    text-transform: lowercase;
+    letter-spacing: 0.3vw;
+}
+
+h4#spacer {
+    /* margin-bottom: 6vmin; */
+}
+
+div.vertical-center {
+  position:relative;
+}
+
+.vertical-center div.ex-desc{
+  position: absolute;}
+
+.right{
+  right: 1.5vw;
+}
+
+.left{
+  left: 1.5vw;
+}
+
+hr.big {
+  height: 2vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(34, 30, 26);
+  width: 99% !important;
+  margin: 0 auto;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(34, 22, 22, 0.75), rgba(0,0,0,0));
+  background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  box-shadow: 0.5vw 1vw 1vw rgba(0, 0, 0, 0.39) inset;
+}
+
+hr.small {
+    background: rgba(53, 40, 36, 0.42);
+    height: 2vw;
+    border: 1px solid rgb(46, 43, 38);
+    border-radius: 10px;
+    box-shadow: inset 1.5vw 1.5vw 1vw rgba(23, 18, 17, 0.67);
+    width: 75%;
+}
+
+.plaque{
+  color: rgb(47, 45, 45);
+  font-weight: bold;
+  padding: 1vmin !important;
+  background-image: url(http://localhost:4567/Wool.jpg);
+  background-size: 50%;
+  box-shadow: rgba(0, 0, 0, 0.298039) 1vw 1vw 1vw;
+  border-style: double;
+  border-radius: 3px;
+  border-color: rgba(91, 82, 67, 0.33);
+  border-width: 10px;
+}
+
+.right .plaque p::before {
+    content: "«";
+    float: left;
+    font-size: 12vmin;
+    margin: -3vmin 1.5vw 0 1vw;
+}
+
+.left .plaque p::before {
+    content: "»";
+    float: right;
+    font-size: 12vmin;
+    margin: -3vmin -0.5vw 0 1.5vw;
+
+}
+
+.right .plaque p{
+    text-align: left;
+    padding: 0 0 0 0;
+}
+
+.left .plaque p{
+    text-align: right;
+    padding: 0 1.5vw 0 0;
+}
+
+h2.metal-label {
+    border-image: url('label-MAYBE.png') 45 95 stretch;
+    font-family: Arvo;
+    font-size: 4vmin;
+    color: rgb(124, 113, 113);
+    text-shadow: 2px 1px rgb(47, 45, 45);
+    background: rgba(200, 191, 176, 1);
+    border-width: 10px 40px;
+    width: 60%;
+    margin: 0 auto 2vmin auto;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+
+  header{
+    width: 100% !important;
+    margin: 0 -5vw !important;
+  }
+
+  h1.font-effect-destruction {
+    font-size: 17vw;
+    text-shadow: 0.2vw 0.3vw white;
+  }
+
+  header h4{
+    font-size: 4vw !important;
+  }
+
+  nav li {
+    font-family: Arvo;
+    display: block;
+    width: 100%;
+    font-size: 4vmin;
+    margin-bottom: 3px;
+    padding: 1vmin;
+    background: rgba(82, 70, 49, 0.57);
+    color: black;
+  }
+  
+  .right .plaque p::before {
+    content: "~";
+    line-height: 0.5;
+    top: 0;
+    float: none;
+    display: block;
+    position: relative;
+    margin: -3vmin 0 1vmin 0;
+    padding: 0;
+    font-size: 15vw;
+    left: 45%;
+    }
+
+  .left .plaque p::before {
+    content: "~";
+    line-height: 0.5;
+    top: 0;
+    float: none;
+    display: block;
+    position: relative;
+    margin: -3vmin 0 1vmin 0;
+    padding: 0;
+    font-size: 15vw;
+    left: 45%;
+  }
+
+  h2.metal-label {
+    text-shadow: 1px 0px rgb(47, 45, 45);
+  }
+
+  .plaque p{
+    text-align: justify !important;
+    padding: 2vmin !important;
+  }
+  
+  .vertical-center div.ex-desc{
+    position: relative;
+    top: initial;
+    transform: initial;
+  }
+
+  .right{
+    right: initial;
+  }
+
+  div.screen{
+    display: none;
+  }
+
+  .col-box.cubby img {
+    -webkit-filter: initial;
+  }
+
+  .shelf.cubby{
+    height: 30vmin !important;
+  }
+
+  .cubby.shelf img{
+    -webkit-filter: initial !important;
+  }
+
+}
+
+.shelf.cubby {
+    max-width: initial;
+    height: 300px;
+    overflow: initial;
+}
+
+.floor {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    background: url('red_floor.jpg');
+}
+
+.cubby.shelf img {
+    height: 22vw;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    -webkit-filter: brightness(0.7) blur(1px);
+}
+
+.cubby.shelf img:hover, .cubby.shelf img.hover_effect {
+    -webkit-filter: initial;
+}
+
+.cubby.shelf img.item-1{
+  left: 4.9%;
+  bottom: 6%;
+  width: 17%;
+  height: auto;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.cubby.shelf img.item-2{
+  left: 20.5%;
+  width: 14%;
+  height: auto;
+  bottom: 3%;
+  z-index: 1;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.cubby.shelf img.item-3{
+  left: 30%;
+  width: 40%;
+  bottom: 11%;
+  height: auto;
+  max-height: 300px;
+  max-width: 300px;
+  z-index: 0;
+}
+
+.cubby.shelf img.item-4{
+  left: 58.3%;
+  bottom: 4%;
+  width: 20%;
+  height: auto;
+  z-index: 4;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.cubby.shelf img.item-5{
+  left: 80.9%;
+  bottom: 12%;
+  height: auto;
+  width: 12%;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+i.font-effect-destruction {
+    width: 30%;
+}
+
+i.fa-envelope::after {
+    content: "email";
+    display: block;
+    font-size: 4vmin;
+}
+
+i.fa-github-alt::after {
+    content: "github";
+    display: block;
+    font-size: 4vmin;
+}
+
+i.fa-twitter::after {
+    content: "twitter";
+    display: block;
+    font-size: 4vmin;
+}
+
+i.font-effect-destruction:hover, i.font-effect-destruction.hover_effect {
+    color: rgb(124, 113, 113);
+}
+
+p.credentials img {
+    background: rgba(200, 191, 176, 0.75);
+    padding: 1vmin;
+}
+
+p.credentials.left img {
+    float: left;
+    margin: 1vmin 3vmin 1vmin 1vmin;
+}
+
+p.credentials.right img {
+    float: right;
+    margin: 1vmin 1vmin 1vmin 3vmin;
+}
+
+p.credentials {
+    text-align: justify;
+}
+
+.plaque hr {
+    width: 75%;
+    border-color: rgb(49, 44, 40);
+}
+
+.plaque hr::after {
+    content: "xx x x xx x x xx x x xx";
+    font-family: Arvo;
+    font-weight: 400;
+    top: -0.8em;
+    font-size: 1em;
+    position: relative;
+}
+
+.plaque.scratches {
+    background: url(light_scratches.jpg);
+    background-size: cover;
+    border: 4px double rgb(157, 116, 84);
+}
+
+section {
+    padding: 1vw 0 !important;
+}
+
+.hover {
+-webkit-user-select: none;
+-webkit-touch-callout: none;        
+}
+
+img.hodag {
+    position: relative;
+    width: 300px;
+    left: 20%;
+}
+
+div#hidden {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 6%;
+    float: none;
+}
+
+section#top {
+  position: relative;
+}
+
+.plaque a {
+    color: black;
+    font-size: 1.8vmin;
+    text-decoration: underline;
+}
+
+.plaque a:hover {
+    text-decoration: none;
+    color: rgb(200, 191, 176);
+}
+
+.plaque a:visited {
+    color: rgb(85, 67, 51);
+}
+
+li {
+  font-family: Arvo;
+  font-weight: 400;
+}
+
+#resume .plaque {
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+#resume nav li {
+    width: 50%;
+}
