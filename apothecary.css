@@ -69,6 +69,7 @@ nav li {
 
 nav li a{
   font-family: Arvo;
+  font-size: 1.6vw;
   color: black !important;
   text-decoration: none !important;
 }
@@ -337,6 +338,10 @@ h2.metal-label {
     -webkit-filter: initial !important;
   }
 
+  nav li a{
+    font-size: 5vmin;
+  }
+
 }
 
 .shelf.cubby {
@@ -415,25 +420,30 @@ h2.metal-label {
 }
 
 i.font-effect-destruction {
-    width: 30%;
+    width: 24%;
+    font-size: 10vmin;
+    height: 15vmin;
+}
+
+i.fa-file-text::after {
+    content: "r\00e9sum\00e9";
 }
 
 i.fa-envelope::after {
     content: "email";
-    display: block;
-    font-size: 4vmin;
 }
 
 i.fa-github-alt::after {
     content: "github";
-    display: block;
-    font-size: 4vmin;
 }
 
 i.fa-twitter::after {
     content: "twitter";
-    display: block;
-    font-size: 4vmin;
+}
+
+i.fa::after{
+  display: block;
+  font-size: 4vmin;
 }
 
 i.font-effect-destruction:hover, i.font-effect-destruction.hover_effect {
@@ -508,7 +518,6 @@ section#top {
 
 .plaque a {
     color: black;
-    font-size: 1.8vmin;
     text-decoration: underline;
 }
 
