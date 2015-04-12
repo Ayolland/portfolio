@@ -35,21 +35,6 @@ section#section1 {
   border-right: 1.5vw solid rgba(0, 0, 0, 0.48);
 }
 
-div.cubby {
-  overflow: hidden;
-  position: relative;
-  background-image: url('red_wood_box.jpg');
-  background-size: 100% auto;
-  margin: 0 auto !important;
-  max-width: 300px;
-  border: 1vmin solid;
-  border-top-color: rgba(24, 24, 24, 1);
-  border-left-color: rgb(43, 43, 43);
-  border-right-color: rgb(90, 76, 58);
-  border-bottom-color: rgb(117, 103, 85);
-  box-shadow: rgba(21, 18, 17, 0.66) -1vw -1vw 5vw inset, rgba(24, 12, 12, 0.73) 3vw 6vw 12vw inset;
-}
-
 nav ul {
     bottom: 0;
     left: 0;
@@ -86,15 +71,6 @@ nav li a:hover{
   color: white !important;
 }
 
-.col-box.cubby img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin: 0 auto;
-  -webkit-filter: blur(2px) brightness(0);
-  -webkit-transition: -webkit-filter 500ms linear;
-}
-
 section#section2 {
     height: 100%;
 }
@@ -109,6 +85,30 @@ body {
     border-left: 1vmin solid rgba(235, 157, 134, 0.15);   
     border-right: 1vmin solid rgba(0, 0, 0, 0.48);
     border-bottom: 1vmin solid black;
+}
+
+div.cubby {
+  overflow: hidden;
+  position: relative;
+  background-image: url('red_wood_box.jpg');
+  background-size: 100% auto;
+  margin: 0 auto !important;
+  max-width: 300px;
+  border: 1vmin solid;
+  border-top-color: rgba(24, 24, 24, 1);
+  border-left-color: rgb(43, 43, 43);
+  border-right-color: rgb(90, 76, 58);
+  border-bottom-color: rgb(117, 103, 85);
+  box-shadow: rgba(21, 18, 17, 0.66) -1vw -1vw 5vw inset, rgba(24, 12, 12, 0.73) 3vw 6vw 12vw inset;
+}
+
+.col-box.cubby img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  -webkit-filter: blur(2px) brightness(0);
+  -webkit-transition: -webkit-filter 500ms linear;
 }
 
 .screen {
