@@ -251,6 +251,10 @@ h2.metal-label {
 }
 
 @media screen and (max-width: 767px) {
+  
+  .screen{
+    background-image: none;
+  }
 
   header{
     width: 100% !important;
