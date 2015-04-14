@@ -54,7 +54,7 @@ nav li {
 
 nav li a{
   font-family: Arvo;
-  font-size: 1.6vw;
+  font-size: 16pt;
   color: black !important;
   text-decoration: none !important;
 }
@@ -143,7 +143,7 @@ h1.font-effect-destruction {
   font-family: Ewert;
   text-align: center;
   text-shadow: 0.2vw 0.3vw white;
-  font-size: 12vw;
+  font-size: 13vw;
   line-height: 0.8;
   margin: 0;
 }
@@ -213,27 +213,31 @@ hr.small {
 
 .right .plaque p::before {
     content: "\00AB";
-    float: left;
+    position: absolute;
+    left: 6%;
+    top: 0;
+    height: 100%;
     font-size: 12vmin;
-    margin: -3vmin 1.5vw 0 1vw;
 }
 
 .left .plaque p::before {
     content: "\00BB";
-    float: right;
+    height: 100%;
+    right: 6%;
+    top: 0;
+    position: absolute;
     font-size: 12vmin;
-    margin: -3vmin -0.5vw 0 1.5vw;
 
 }
 
 .right .plaque p{
     text-align: left;
-    padding: 0 0 0 0;
+    margin-left: 12%;
 }
 
 .left .plaque p{
     text-align: right;
-    padding: 0 1.5vw 0 0;
+    margin-right: 12%;
 }
 
 h2.metal-label {
@@ -250,10 +254,29 @@ h2.metal-label {
     text-transform: uppercase;
 }
 
+@media screen and (min-width: 973px) {
+  h1.font-effect-destruction {
+    font-size: 110pt;
+  }
+
+  nav li a {
+    font-size: 13pt;
+  }
+
+}
+
 @media screen and (max-width: 767px) {
+
+  .plaque p{
+    margin: 5px;
+  }
   
   .screen{
     background-image: none;
+  }
+
+  .left .plaque p, .right .plaque p {
+    margin: 5px;
   }
 
   header{
@@ -315,6 +338,10 @@ h2.metal-label {
     text-align: justify !important;
     padding: 2vmin !important;
   }
+
+  .left .plaque p, .right .plaque p {
+    min-height: 150px;
+  }
   
   .vertical-center div.ex-desc{
     position: relative;
@@ -351,7 +378,7 @@ h2.metal-label {
 .shelf.cubby {
     max-width: initial;
     height: 300px;
-    overflow: initial;
+    overflow: hidden;
 }
 
 .floor {
@@ -361,13 +388,15 @@ h2.metal-label {
     bottom: 0;
     left: 0;
     background: url('red_floor.jpg');
+    z-index: 0;
 }
 
 .cubby.shelf img {
-    height: 22vw;
-    width: auto;
-    position: absolute;
-    bottom: 0;
+    /* height: 22vw; */
+    /* width: auto; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    z-index: 0;
     -webkit-filter: brightness(0.7) blur(1px);
 }
 
@@ -504,8 +533,8 @@ section {
 
 img.hodag {
     position: relative;
-    width: 300px;
-    left: 20%;
+    height: 100% !important;
+    /* left: 20%; */
 }
 
 div#hidden {
