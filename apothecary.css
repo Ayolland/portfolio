@@ -54,7 +54,7 @@ nav li {
 
 nav li a{
   font-family: Arvo;
-  font-size: 16pt;
+  font-size: 13pt;
   color: black !important;
   text-decoration: none !important;
 }
@@ -142,16 +142,16 @@ img#bottles {
 h1.font-effect-destruction {
   font-family: Ewert;
   text-align: center;
-  text-shadow: 0.2vw 0.3vw white;
-  font-size: 13vw;
+  text-shadow: 2pt 5pt white;
+  font-size: 115pt;
   line-height: 0.8;
   margin: 0;
 }
 
 h4 {
     font-family: Arvo !important;
-    font-size: 2vw !important;
-    margin: 2vw;
+    font-size: 21pt !important;
+    margin: 10pt;
     text-transform: lowercase;
     letter-spacing: 0.3vw;
 }
@@ -254,13 +254,14 @@ h2.metal-label {
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 973px) {
+@media screen and (max-width: 992px) {
   h1.font-effect-destruction {
-    font-size: 110pt;
+    font-size: 80pt;
+    text-shadow: 1pt 3pt white;
   }
 
   nav li a {
-    font-size: 13pt;
+    font-size: 10pt;
   }
 
 }
@@ -286,7 +287,7 @@ h2.metal-label {
 
   h1.font-effect-destruction {
     font-size: 17vw;
-    text-shadow: 0.2vw 0.3vw white;
+    text-shadow: 1.5pt 1.5pt white;
   }
 
   header h4{
