@@ -9,8 +9,10 @@ $('.hover').bind('touchstart touchend', function(e) {
 window.setInterval(ratchet, 30);
 
 function ratchet(){
-  headerY = (window.scrollY * 0.5) 
-  header.css("transform","translateY(-" + headerY + "px)");
+  headerY = (window.scrollY * 0.5)
+  if (headerY < 300){
+    header.css("transform","translateY(-" + headerY + "px)");
+  };
 };
 
 $(function () {
